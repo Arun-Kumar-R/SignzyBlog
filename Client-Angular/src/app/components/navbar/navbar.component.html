@@ -1,0 +1,32 @@
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand main" href="/blog-list">Signzy Blog</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class = "nav navbar-nav navbar-right ml-auto"> 
+        <li [routerLinkActive] = "['active']" class="nav-item highlight">
+            <a  [routerLink]="['/blog-list']" class="nav-link" href="/blog-list">Blog</a>
+        </li>  
+          
+        <li [routerLinkActive] = "['active']" class="nav-item highlight ">
+          <a  [routerLink]="['/user-register']" class="nav-link" href="/user-register">Register</a>
+        </li>
+  
+        <li [routerLinkActive] = "['active']" class="nav-item highlight">
+          <a [routerLink]="['/user-login']" class="nav-link" href="/user-login">Login</a>
+        </li>
+    
+        <li [routerLinkActive] = "['active']" class="nav-item highlight">
+          <a [routerLink]="['/user-logout']" class="nav-link" href="/user-logout">LogOut</a>
+        </li>
+        
+        <li [routerLinkActive] = "['active']" class="nav-item highlight">
+          <a [routerLink]="['/create-blog']" class="nav-link" href="/create-blog">Create Blog</a>
+        </li>
+  
+       </ul>
+    </div>
+  </nav>
+  
+  

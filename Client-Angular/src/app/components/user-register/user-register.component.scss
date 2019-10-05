@@ -1,0 +1,186 @@
+@import '../../scss/media';
+@import '../../scss/config';
+
+#register{
+    padding-top:60px;
+}
+h1{
+    text-align: center;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color:purple;
+    margin-bottom: 30px;
+}
+input.ng-dirty{
+    border-left:6px solid red;
+}
+input.ng-valid{
+    border-left:6px solid green;
+}
+input, textarea {
+    // outline: none;
+    font-weight: $font-weight;
+    font-family: $font-family;
+    color: black;
+    // border:none;
+    text-transform: lowercase;
+}
+// .btn {
+//     width:155px;
+//     font-weight: $font-weight;
+//     font-family: $font-family;
+//     color: yellow;
+//     background-color: black;
+//     letter-spacing: 0.1em;
+// }
+label {
+    font-size: 18px;
+    font-family: $font-family;
+    color:purple;
+    letter-spacing: 0.1em;
+}
+// hr{
+//     border: 0.3px solid rgb(214, 155, 201);
+// }
+// // modal popup
+// .modal-header h2 {
+//     padding-left: 60px;
+//     color: black !important;
+//     font-family: $font-family;
+//     font-weight: $font-weight
+// }
+// .modal-body h4 {
+//     color: green;
+// }
+// .close{
+//     color: red;
+//     font-weight: $font-weight;
+//     font-size: 36px;
+// }
+// .modal-btn {
+//     width: 100px;
+//     height: 48px;
+//     padding: 10px;
+//     color: white;
+//     font-weight: bold;
+//     font-family: consolas;
+//     background-color: #3ca83c;
+//     border-radius: 10px;
+//     font-size: 18px;
+//     outline: none;
+//     border: 2px;
+// }
+// // mobiles
+// @include mediaSm {
+//     #contact{
+//         padding-left: 30px;
+//         padding-right: 30px;
+//     }
+//     label {
+//         font-size: $mobile-font;
+//     }
+//     .btn {
+//         width:125px;
+//         font-size:$mobile-font;
+//     }
+//     h1{
+//         font-size: 22px;
+//         font-weight: bold
+//     }
+//     // modal popup
+//     .modal-header h2 {
+//         color: black !important;
+//         font-size: 18px;
+//     }
+//     .modal-body h4 {
+//         font-size: 16px;
+//     }
+//     .close{
+//         font-size: 24px;
+//     }
+//     .modal-btn {
+//         width: 90px;
+//         height: 38px;
+//         padding: 0px;
+//         font-size: 16px;
+//     }
+// }
+// // tablets
+// @include mediaMd {
+//     #contact{
+//         padding-left: 35px;
+//         padding-right: 35px;
+//     }
+//     label {
+//         font-size: $tablet-font;
+//     }
+//     .btn {
+//         width:135px;   
+//         font-size:$tablet-font;
+//     }
+//     h1{
+//         font-size: 24px;
+//         font-weight: bold
+//     }
+//     .modal-header h2 {
+//         color: black !important;
+//         font-size: 20px;
+//     }
+//     .modal-body h4 {
+//         font-size: 18px;
+//     }
+//     .close{
+//         font-size: 26px;
+//     }
+//     .modal-btn {
+//         width: 90px;
+//         height: 38px;
+//         padding: 0px;
+//         font-size: 18px;
+//     }
+// }
+
+// // laptop
+// @include mediaLg {
+//     h1{
+//         font-size: 28px;
+//         font-weight: bold
+//     }
+//     label {
+//         font-size: $laptop-font;
+//     }
+//     .btn {
+//         width:165px;   
+//         font-size:$laptop-font;
+//     }
+//     .modal-header h2 {
+//         color: black !important;
+//         font-size: 22px;
+//     }
+//     .modal-body h4 {
+//         font-size: 20px;
+//     }
+//     .close{
+//         font-size: 28px;
+//     }
+//     .modal-btn {
+//         width: 100px;
+//         height: 48px;
+//         padding: 10px;
+//         font-size: 20px;
+//     }
+// }
+// // Pc
+// @include mediaXl {
+//     h1{
+//         font-size: 30px;
+//         font-weight: bold
+//     }
+//     label {
+//         font-size: $large-font;
+//     }
+//     .btn {
+//         width:195px;   
+//         font-size:$large-font;
+//     }
+// }

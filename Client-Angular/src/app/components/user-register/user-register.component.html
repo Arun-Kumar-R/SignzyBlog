@@ -1,0 +1,65 @@
+<app-navbar></app-navbar>
+<section class = "registerpage" id = "register">
+  <div class="container">
+    <h1>User Registeration</h1>
+    <form [formGroup] = "forms" #registerform = "ngForm" (ngSubmit) = "onSubmit(registerform.form)">
+        <div class="formgroup" >
+          <label>FullName:</label>
+          <input type = "text" class = "form-control" formControlName = "fullName"
+           #fullName placeholder="Enter Your FullName">
+          <div *ngIf = "forms.controls['fullName'].hasError('required') && forms.controls['fullName'].hasError('touched')" class = "alert alert-danger">
+            FullName Field is Required
+          </div>
+          <div *ngIf = "forms.controls['fullName'].hasError('minlength')" class = "alert alert-danger">
+            FullName Field must be have 5 characters
+          </div>
+          <div *ngIf = "forms.controls['fullName'].hasError('maxlength')" class = "alert alert-danger">
+            FullName Field exceed 15 characters
+          </div>
+        </div><br>
+        <div class="formgroup">
+            <label>*Email:</label>
+            <input type = "email" class = "form-control email" formControlName = "email" 
+             placeholder="Enter Your Email">
+      
+            <div *ngIf = "forms.controls['email'].hasError('required') && forms.controls['email'].hasError('touched')" class = "alert alert-danger">
+                Email is Required
+            </div>
+            <div *ngIf = "forms.controls['email'].hasError('pattern')" class = "alert alert-danger">
+               Please Enter Correct Email
+              </div>
+        </div><br>
+        <div class="formgroup">
+            <label>Password:</label>
+            <input type = "password" class = "form-control" formControlName = "password">      
+            <div *ngIf = "forms.controls['password'].hasError('required') && forms.controls['password'].hasError('touched')" class = "alert alert-danger">
+              password is Required
+            </div>
+        </div><br>
+        <div class="formgroup">
+            <label>Confirm Password:</label>
+            <input type = "password" class = "form-control" formControlName = "CPassword">
+            <div *ngIf = "forms.controls['CPassword'].hasError('required') && forms.controls['CPassword'].hasError('touched')" class = "alert alert-danger">
+               confirm password is Required
+            </div>
+          </div><br>
+        <button type = "submit" [disabled] = "!forms.valid" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Register</button>
+               <!-- modal popup -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 class="modal-title mx-auto" id="exampleModalLabel">Register Successfully..!</h2>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="mx-auto modal-btn" data-dismiss="modal">Ok</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </form>
+  </div>  
+</section>
